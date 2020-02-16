@@ -21,11 +21,18 @@ def selection_sort( arr ):
     return arr
 
 
-print(selection_sort([7, 6, 5, 32, 10]))
-
-
 # TO-DO:  implement the Bubble Sort function below
+
+
 def bubble_sort( arr ):
+    # loop through the whole array not including the first index
+    for i in range(1, len(arr)):
+        # loop through the array including the first index.
+        for j in range(0, len(arr) - 1):
+            # compare current index to the index right beside it -- or to the right of it.
+            if arr[j] > arr[j + 1]:
+                # swap them.
+                arr[j], arr[j + 1] = arr[j + 1], arr[j]
 
     return arr
 
